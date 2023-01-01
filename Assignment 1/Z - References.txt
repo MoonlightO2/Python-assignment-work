@@ -1,0 +1,2 @@
+Python :- Read a text file and convert it to upper case and write to a second file
+https://stackoverflow.com/questions/51816880/python-read-a-text-file-and-convert-it-to-upper-case-and-write-to-a-second-fi

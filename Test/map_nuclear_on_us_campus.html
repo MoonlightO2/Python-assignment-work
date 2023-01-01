@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f22ff87cfe437fecd3d12247b048ef4e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+                <div style="position: fixed; 
+                            bottom: 50px; left: 50px; width: 300px; height: 30px; 
+                            border:2px solid black; z-index:9999; font-size:16px;
+                            color:red">&nbsp; Nuclear Waste Sites on US Campuses
+                </div>
+                
+    
+            <div class="folium-map" id="map_f22ff87cfe437fecd3d12247b048ef4e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f22ff87cfe437fecd3d12247b048ef4e = L.map(
+                "map_f22ff87cfe437fecd3d12247b048ef4e",
+                {
+                    center: [37.0, -96.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_320de9ad8f90fc63c70e3272635db2e3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+            var circle_marker_b5cc8ac8288e122b5cc9581ce877520d = L.circleMarker(
+                [35.8888273, -106.3050223],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_d13b5fb3692ab7b084fd89512098cff8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b30303a4a6be2044fa0ec61042b76147 = $(`<div id="html_b30303a4a6be2044fa0ec61042b76147" style="width: 100.0%; height: 100.0%;">Acid/Pueblo Canyon</div>`)[0];
+                popup_d13b5fb3692ab7b084fd89512098cff8.setContent(html_b30303a4a6be2044fa0ec61042b76147);
+            
+        
+
+        circle_marker_b5cc8ac8288e122b5cc9581ce877520d.bindPopup(popup_d13b5fb3692ab7b084fd89512098cff8)
+        ;
+
+        
+    
+    
+            var circle_marker_4e6e2c439f8943c9438c9913ba2605cd = L.circleMarker(
+                [39.5034873, -84.7438586],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_0219c91aa4591110b885076e1d6f0c00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e8a08ac069c8936c99fc509ec567d26 = $(`<div id="html_7e8a08ac069c8936c99fc509ec567d26" style="width: 100.0%; height: 100.0%;">Alba Craft Shop</div>`)[0];
+                popup_0219c91aa4591110b885076e1d6f0c00.setContent(html_7e8a08ac069c8936c99fc509ec567d26);
+            
+        
+
+        circle_marker_4e6e2c439f8943c9438c9913ba2605cd.bindPopup(popup_0219c91aa4591110b885076e1d6f0c00)
+        ;
+
+        
+    
+    
+            var circle_marker_48d0bfd5b0a21ec51da3556758ea4e30 = L.circleMarker(
+                [44.6208218, -123.1209165],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_fa93c35ebddac79aad810da5a7259e89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a995e36401a9f5f25573048c827c8c5f = $(`<div id="html_a995e36401a9f5f25573048c827c8c5f" style="width: 100.0%; height: 100.0%;">"Albany, Oregon, FUSRAP Site"</div>`)[0];
+                popup_fa93c35ebddac79aad810da5a7259e89.setContent(html_a995e36401a9f5f25573048c827c8c5f);
+            
+        
+
+        circle_marker_48d0bfd5b0a21ec51da3556758ea4e30.bindPopup(popup_fa93c35ebddac79aad810da5a7259e89)
+        ;
+
+        
+    
+    
+            var circle_marker_e6086d70759675adf9227710e81dec42 = L.circleMarker(
+                [40.641371, -80.242936],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_5198226b9856039fa79f8b55b64917a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62b743ed1244342bef9411e9d4785a6c = $(`<div id="html_62b743ed1244342bef9411e9d4785a6c" style="width: 100.0%; height: 100.0%;">Aliquippa Forge</div>`)[0];
+                popup_5198226b9856039fa79f8b55b64917a1.setContent(html_62b743ed1244342bef9411e9d4785a6c);
+            
+        
+
+        circle_marker_e6086d70759675adf9227710e81dec42.bindPopup(popup_5198226b9856039fa79f8b55b64917a1)
+        ;
+
+        
+    
+    
+            var circle_marker_d5819af8e43fe03e50cc2c4e92184089 = L.circleMarker(
+                [39.361063, -84.54075],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_8f948d9087fc6f8895aad2379c0dde00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf758455a484b5c6a00f644962fbf840 = $(`<div id="html_cf758455a484b5c6a00f644962fbf840" style="width: 100.0%; height: 100.0%;">Associated Aircraft Tool and Manufacturing Co.</div>`)[0];
+                popup_8f948d9087fc6f8895aad2379c0dde00.setContent(html_cf758455a484b5c6a00f644962fbf840);
+            
+        
+
+        circle_marker_d5819af8e43fe03e50cc2c4e92184089.bindPopup(popup_8f948d9087fc6f8895aad2379c0dde00)
+        ;
+
+        
+    
+    
+            var circle_marker_99aefdf418c32f60dc85f10acdeacf9b = L.circleMarker(
+                [39.9573541, -83.0114552],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_38e7df94312010ea664eb4fbe63575d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43ead95fea74ee36900e07367fc9926a = $(`<div id="html_43ead95fea74ee36900e07367fc9926a" style="width: 100.0%; height: 100.0%;">B & T Metals</div>`)[0];
+                popup_38e7df94312010ea664eb4fbe63575d7.setContent(html_43ead95fea74ee36900e07367fc9926a);
+            
+        
+
+        circle_marker_99aefdf418c32f60dc85f10acdeacf9b.bindPopup(popup_38e7df94312010ea664eb4fbe63575d7)
+        ;
+
+        
+    
+    
+            var circle_marker_72cfc6f16516bd18590c6010a5239f24 = L.circleMarker(
+                [41.672189, -83.568625],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_7ad8d5e79dd2fc19872571b6c83df932 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3f1d0e052e5b7530a57bfadb000939f = $(`<div id="html_b3f1d0e052e5b7530a57bfadb000939f" style="width: 100.0%; height: 100.0%;">Baker Brothers</div>`)[0];
+                popup_7ad8d5e79dd2fc19872571b6c83df932.setContent(html_b3f1d0e052e5b7530a57bfadb000939f);
+            
+        
+
+        circle_marker_72cfc6f16516bd18590c6010a5239f24.bindPopup(popup_7ad8d5e79dd2fc19872571b6c83df932)
+        ;
+
+        
+    
+    
+            var circle_marker_1137596e8903e43f0cb98dcad6b0991b = L.circleMarker(
+                [40.746102, -74.0066415],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_5b78413a9ae4ac6123f668e6e73f2f1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b48a550496994e6ac3d73c45b250e62 = $(`<div id="html_6b48a550496994e6ac3d73c45b250e62" style="width: 100.0%; height: 100.0%;">Baker and Williams Warehouses</div>`)[0];
+                popup_5b78413a9ae4ac6123f668e6e73f2f1e.setContent(html_6b48a550496994e6ac3d73c45b250e62);
+            
+        
+
+        circle_marker_1137596e8903e43f0cb98dcad6b0991b.bindPopup(popup_5b78413a9ae4ac6123f668e6e73f2f1e)
+        ;
+
+        
+    
+    
+            var circle_marker_0c274d2453d6ad2f2e47c16238797b44 = L.circleMarker(
+                [35.8997249, -106.2901271],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_6db400e6652fc6cbaed9f1123e56471a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdedf049ecdea3fa8c31c0a5d12e253d = $(`<div id="html_fdedf049ecdea3fa8c31c0a5d12e253d" style="width: 100.0%; height: 100.0%;">"Bayo Canyon, New Mexico, FUSRAP Site"</div>`)[0];
+                popup_6db400e6652fc6cbaed9f1123e56471a.setContent(html_fdedf049ecdea3fa8c31c0a5d12e253d);
+            
+        
+
+        circle_marker_0c274d2453d6ad2f2e47c16238797b44.bindPopup(popup_6db400e6652fc6cbaed9f1123e56471a)
+        ;
+
+        
+    
+    
+            var circle_marker_e76bad9b0d087187cdd36915c80ebb7e = L.circleMarker(
+                [42.841147, -78.83406],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_0ab6d56965d94caea560cc8d478329ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dd572fac8bcb5676f8f2ec3d038e14a = $(`<div id="html_2dd572fac8bcb5676f8f2ec3d038e14a" style="width: 100.0%; height: 100.0%;">Bliss and Laughlin Steel</div>`)[0];
+                popup_0ab6d56965d94caea560cc8d478329ee.setContent(html_2dd572fac8bcb5676f8f2ec3d038e14a);
+            
+        
+
+        circle_marker_e76bad9b0d087187cdd36915c80ebb7e.bindPopup(popup_0ab6d56965d94caea560cc8d478329ee)
+        ;
+
+        
+    
+    
+            var circle_marker_0ff94dc4fb6e84866679921c860f86dd = L.circleMarker(
+                [41.8881016, -84.0164792],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_fb65f491efb9664fc571e093ed1428c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3765661375ca27a5e482a4a79de16158 = $(`<div id="html_3765661375ca27a5e482a4a79de16158" style="width: 100.0%; height: 100.0%;">Bridgeport Brass Co.</div>`)[0];
+                popup_fb65f491efb9664fc571e093ed1428c0.setContent(html_3765661375ca27a5e482a4a79de16158);
+            
+        
+
+        circle_marker_0ff94dc4fb6e84866679921c860f86dd.bindPopup(popup_fb65f491efb9664fc571e093ed1428c0)
+        ;
+
+        
+    
+    
+            var circle_marker_4f3033e5f2e90334fffb7190cf05244a = L.circleMarker(
+                [40.5376109, -79.7820937],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_e52f79d21a757bcdd23b1b15b22cd4ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4a0a1d0d3014df22e6829e55166da3c = $(`<div id="html_f4a0a1d0d3014df22e6829e55166da3c" style="width: 100.0%; height: 100.0%;">C.H. Schnorr</div>`)[0];
+                popup_e52f79d21a757bcdd23b1b15b22cd4ee.setContent(html_f4a0a1d0d3014df22e6829e55166da3c);
+            
+        
+
+        circle_marker_4f3033e5f2e90334fffb7190cf05244a.bindPopup(popup_e52f79d21a757bcdd23b1b15b22cd4ee)
+        ;
+
+        
+    
+    
+            var circle_marker_f35e1f0cef1c71f0a455e4feb7168c53 = L.circleMarker(
+                [42.1542011, -72.4997776],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_3add8dd297dfd895c0dbc313a10b4b31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c10b0f70be98d14b9668a72f0bf6ae9 = $(`<div id="html_4c10b0f70be98d14b9668a72f0bf6ae9" style="width: 100.0%; height: 100.0%;">Chapman Valve</div>`)[0];
+                popup_3add8dd297dfd895c0dbc313a10b4b31.setContent(html_4c10b0f70be98d14b9668a72f0bf6ae9);
+            
+        
+
+        circle_marker_f35e1f0cef1c71f0a455e4feb7168c53.bindPopup(popup_3add8dd297dfd895c0dbc313a10b4b31)
+        ;
+
+        
+    
+    
+            var circle_marker_3d3ad66b20aacac6f3ee4542fcdd15db = L.circleMarker(
+                [34.214928, -105.8793205],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_b3e45a4b31c35c20c896e17b23cb562c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bc4d3df6d2279465623c20f4636e22a = $(`<div id="html_2bc4d3df6d2279465623c20f4636e22a" style="width: 100.0%; height: 100.0%;">"Chupadera Mesa, New Mexico, FUSRAP Site"</div>`)[0];
+                popup_b3e45a4b31c35c20c896e17b23cb562c.setContent(html_2bc4d3df6d2279465623c20f4636e22a);
+            
+        
+
+        circle_marker_3d3ad66b20aacac6f3ee4542fcdd15db.bindPopup(popup_b3e45a4b31c35c20c896e17b23cb562c)
+        ;
+
+        
+    
+    
+            var circle_marker_852447a21bfd399da5d65b5490b9ca2b = L.circleMarker(
+                [38.6870307, -90.1673616],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_63fa9449e8cbc5539f51bc044c362c0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e8db34e8ce30dba3f90e736894c3d96 = $(`<div id="html_8e8db34e8ce30dba3f90e736894c3d96" style="width: 100.0%; height: 100.0%;">"Dow Chemical Co., Madison Site"</div>`)[0];
+                popup_63fa9449e8cbc5539f51bc044c362c0f.setContent(html_8e8db34e8ce30dba3f90e736894c3d96);
+            
+        
+
+        circle_marker_852447a21bfd399da5d65b5490b9ca2b.bindPopup(popup_63fa9449e8cbc5539f51bc044c362c0f)
+        ;
+
+        
+    
+    
+            var circle_marker_8d341282cd6084ef7d325da878fb90aa = L.circleMarker(
+                [38.6926197, -90.16229],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_8d1891f30f830a161d3fe4a119f2ae6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81af5c93889eaeaa283beffb992fa663 = $(`<div id="html_81af5c93889eaeaa283beffb992fa663" style="width: 100.0%; height: 100.0%;">General Steel Industries</div>`)[0];
+                popup_8d1891f30f830a161d3fe4a119f2ae6f.setContent(html_81af5c93889eaeaa283beffb992fa663);
+            
+        
+
+        circle_marker_8d341282cd6084ef7d325da878fb90aa.bindPopup(popup_8d1891f30f830a161d3fe4a119f2ae6f)
+        ;
+
+        
+    
+    
+            var circle_marker_4e0da1124db9a9b251a58899503838e1 = L.circleMarker(
+                [37.872571, -122.256179],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_4d154f406f2288703ab62f677f17c80b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1c67c38032c56ad8396a528cac12686 = $(`<div id="html_c1c67c38032c56ad8396a528cac12686" style="width: 100.0%; height: 100.0%;">"Gilman Hall, University of California at Berkeley"</div>`)[0];
+                popup_4d154f406f2288703ab62f677f17c80b.setContent(html_c1c67c38032c56ad8396a528cac12686);
+            
+        
+
+        circle_marker_4e0da1124db9a9b251a58899503838e1.bindPopup(popup_4d154f406f2288703ab62f677f17c80b)
+        ;
+
+        
+    
+    
+            var circle_marker_910be727f9d47cb34ce4650c0a3f7300 = L.circleMarker(
+                [39.3822485, -84.5471105],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_0cbe33ee1c279702da8a2a626f1ef618 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acd0386071ad7cf0070e867f849bf0be = $(`<div id="html_acd0386071ad7cf0070e867f849bf0be" style="width: 100.0%; height: 100.0%;">Hamilton OH Site</div>`)[0];
+                popup_0cbe33ee1c279702da8a2a626f1ef618.setContent(html_acd0386071ad7cf0070e867f849bf0be);
+            
+        
+
+        circle_marker_910be727f9d47cb34ce4650c0a3f7300.bindPopup(popup_0cbe33ee1c279702da8a2a626f1ef618)
+        ;
+
+        
+    
+    
+            var circle_marker_1db3674217a72e1a8c81e950caca3c43 = L.circleMarker(
+                [40.7087363, -74.1012813],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_f3b04c5186049bc5100fc8d7b221732f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47550fa8f2dce8834759c7ac4dc5be47 = $(`<div id="html_47550fa8f2dce8834759c7ac4dc5be47" style="width: 100.0%; height: 100.0%;">Jersey City FUSRAP Site</div>`)[0];
+                popup_f3b04c5186049bc5100fc8d7b221732f.setContent(html_47550fa8f2dce8834759c7ac4dc5be47);
+            
+        
+
+        circle_marker_1db3674217a72e1a8c81e950caca3c43.bindPopup(popup_f3b04c5186049bc5100fc8d7b221732f)
+        ;
+
+        
+    
+    
+            var circle_marker_d28ff1e97cfb4e06a4a3ea5c2b48143c = L.circleMarker(
+                [40.577768, -74.4965644],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_6fa9c908550730ea56c8b762d628dfa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acc04ed697a2f2f339b3bc835cbe0f09 = $(`<div id="html_acc04ed697a2f2f339b3bc835cbe0f09" style="width: 100.0%; height: 100.0%;">Middlesex North Site</div>`)[0];
+                popup_6fa9c908550730ea56c8b762d628dfa1.setContent(html_acc04ed697a2f2f339b3bc835cbe0f09);
+            
+        
+
+        circle_marker_d28ff1e97cfb4e06a4a3ea5c2b48143c.bindPopup(popup_6fa9c908550730ea56c8b762d628dfa1)
+        ;
+
+        
+    
+    
+            var circle_marker_3ba53921391940f02d4fbd820e2c4717 = L.circleMarker(
+                [41.7986843, -87.6069369],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_ee2df47e28f17428fb1d060fa2555af1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6363165e7b5b1cc7633539d5d6f33bec = $(`<div id="html_6363165e7b5b1cc7633539d5d6f33bec" style="width: 100.0%; height: 100.0%;">National Guard Armory</div>`)[0];
+                popup_ee2df47e28f17428fb1d060fa2555af1.setContent(html_6363165e7b5b1cc7633539d5d6f33bec);
+            
+        
+
+        circle_marker_3ba53921391940f02d4fbd820e2c4717.bindPopup(popup_ee2df47e28f17428fb1d060fa2555af1)
+        ;
+
+        
+    
+    
+            var circle_marker_181287d71409cdb6ed0567999a2e03c1 = L.circleMarker(
+                [40.4702797, -74.4762541],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_98c974fbca030b99dddd14f35b199ac1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2092c84ef08056d00ac2548c69feb8c = $(`<div id="html_b2092c84ef08056d00ac2548c69feb8c" style="width: 100.0%; height: 100.0%;">"New Brunswick, NJ, FUSRAP Site"</div>`)[0];
+                popup_98c974fbca030b99dddd14f35b199ac1.setContent(html_b2092c84ef08056d00ac2548c69feb8c);
+            
+        
+
+        circle_marker_181287d71409cdb6ed0567999a2e03c1.bindPopup(popup_98c974fbca030b99dddd14f35b199ac1)
+        ;
+
+        
+    
+    
+            var circle_marker_8ea7e335a01a499046dccd7dd23dc3b3 = L.circleMarker(
+                [43.2209056, -78.9737308],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_877c66525854d386b17a5eb03f9c92f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09250960aeecdf668f46fa8f5d52658f = $(`<div id="html_09250960aeecdf668f46fa8f5d52658f" style="width: 100.0%; height: 100.0%;">Niagara Falls Vicinity Properties</div>`)[0];
+                popup_877c66525854d386b17a5eb03f9c92f3.setContent(html_09250960aeecdf668f46fa8f5d52658f);
+            
+        
+
+        circle_marker_8ea7e335a01a499046dccd7dd23dc3b3.bindPopup(popup_877c66525854d386b17a5eb03f9c92f3)
+        ;
+
+        
+    
+    
+            var circle_marker_64ddd5feb6684d0cb3b8c4e130aac2af = L.circleMarker(
+                [36.0427296, -84.2066525],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_d7f2cf19eeeac0ab998f1bae926b2208 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c9f26d955eefffb5e384a0fdd4a28fe = $(`<div id="html_6c9f26d955eefffb5e384a0fdd4a28fe" style="width: 100.0%; height: 100.0%;">"Oak Ridge, TN, Warehouse Site"</div>`)[0];
+                popup_d7f2cf19eeeac0ab998f1bae926b2208.setContent(html_6c9f26d955eefffb5e384a0fdd4a28fe);
+            
+        
+
+        circle_marker_64ddd5feb6684d0cb3b8c4e130aac2af.bindPopup(popup_d7f2cf19eeeac0ab998f1bae926b2208)
+        ;
+
+        
+    
+    
+            var circle_marker_f83bcee2f5fc462878c728f1873f9cbe = L.circleMarker(
+                [41.4007898, -73.072232],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_c7263471096edffc5bc1f78a74772666 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08d20ca89786a21b1bbb99e8c0a27075 = $(`<div id="html_08d20ca89786a21b1bbb99e8c0a27075" style="width: 100.0%; height: 100.0%;">Seymour Specialty Wire</div>`)[0];
+                popup_c7263471096edffc5bc1f78a74772666.setContent(html_08d20ca89786a21b1bbb99e8c0a27075);
+            
+        
+
+        circle_marker_f83bcee2f5fc462878c728f1873f9cbe.bindPopup(popup_c7263471096edffc5bc1f78a74772666)
+        ;
+
+        
+    
+    
+            var circle_marker_8deba14ad253cae5222ac74c5fd46b8f = L.circleMarker(
+                [42.9918367, -78.9201008],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_ea7c59c22f47f6cd9d7e3d99611a8a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_116a88d9b25085ceb881a945c90a8faa = $(`<div id="html_116a88d9b25085ceb881a945c90a8faa" style="width: 100.0%; height: 100.0%;">Tonawanda North FUSRAP Site</div>`)[0];
+                popup_ea7c59c22f47f6cd9d7e3d99611a8a76.setContent(html_116a88d9b25085ceb881a945c90a8faa);
+            
+        
+
+        circle_marker_8deba14ad253cae5222ac74c5fd46b8f.bindPopup(popup_ea7c59c22f47f6cd9d7e3d99611a8a76)
+        ;
+
+        
+    
+    
+            var circle_marker_4823fbad765a6294e6141b1ffdedf910 = L.circleMarker(
+                [41.7924797, -87.6010361],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_a9b88985b898eb08ad8921919ed2145d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00556a614eb074e7382330d93b8ffcdf = $(`<div id="html_00556a614eb074e7382330d93b8ffcdf" style="width: 100.0%; height: 100.0%;">University of Chicago Metallurgical Laboratory</div>`)[0];
+                popup_a9b88985b898eb08ad8921919ed2145d.setContent(html_00556a614eb074e7382330d93b8ffcdf);
+            
+        
+
+        circle_marker_4823fbad765a6294e6141b1ffdedf910.bindPopup(popup_a9b88985b898eb08ad8921919ed2145d)
+        ;
+
+        
+    
+    
+            var circle_marker_e26939a222c27ce4d10e0a9bd5949157 = L.circleMarker(
+                [42.5404703, -70.8888085],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_de6c8fbc098d09b2b77f2a85970d4134 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd4940f881b2f09da48301664af18c8e = $(`<div id="html_fd4940f881b2f09da48301664af18c8e" style="width: 100.0%; height: 100.0%;">Ventron Corporation</div>`)[0];
+                popup_de6c8fbc098d09b2b77f2a85970d4134.setContent(html_fd4940f881b2f09da48301664af18c8e);
+            
+        
+
+        circle_marker_e26939a222c27ce4d10e0a9bd5949157.bindPopup(popup_de6c8fbc098d09b2b77f2a85970d4134)
+        ;
+
+        
+    
+    
+            var circle_marker_da85b5cab623e40c8ac2a6387ee1106f = L.circleMarker(
+                [40.9696277, -74.2707793],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_f22ff87cfe437fecd3d12247b048ef4e);
+        
+    
+        var popup_201449a53b4d2734a834356b7b63748a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b38af35fc42c3af4fac1009f1c37f3ab = $(`<div id="html_b38af35fc42c3af4fac1009f1c37f3ab" style="width: 100.0%; height: 100.0%;">Wayne FUSRAP Site</div>`)[0];
+                popup_201449a53b4d2734a834356b7b63748a.setContent(html_b38af35fc42c3af4fac1009f1c37f3ab);
+            
+        
+
+        circle_marker_da85b5cab623e40c8ac2a6387ee1106f.bindPopup(popup_201449a53b4d2734a834356b7b63748a)
+        ;
+
+        
+    
+</script>
+</html>

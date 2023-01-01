@@ -1,0 +1,15 @@
+import pandas as pd
+import folium
+
+
+franchies = pd.read_csv('GrowLocations.csv')
+franchies.head()
+center = (56.472350, -2.964160)
+map_colony = folium.Map(location = center, zoom_start = 8)
+map_colony
+for index, frachies in franchies.iterrows():
+location = [franchies['Latitude'], franchies['Longitude']]
+folium.Marker(location, popup = f'Name:{franchies["Colony"]}').add_to(map_colony)
+
+map_colony
+map_colony.save("map.html")

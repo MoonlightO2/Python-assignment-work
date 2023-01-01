@@ -1,0 +1,123 @@
+import pandas as pd
+import folium
+Our first map
+
+world = folium.Map(
+    zoom_start=2,
+    location=[13.133932434766733, 16.103938729508073])
+world
+Make this Notebook Trusted to load map: File -> Trust Notebook
+world.save('maps_htmls/world_empty.html')
+Marking places
+Reading data
+
+cities = pd.read_csv('cities.csv')
+print(cities.shape)
+cities.head(3)
+(22, 5)
+name	latitude	longitude	lived	visited
+0	Olinda	-7.998127	-34.908203	yes	yes
+1	Recife	-8.052200	-34.928600	yes	yes
+2	Miami	25.761700	-80.191800	no	yes
+Marking some cities in the map
+
+city = cities.iloc[0]
+folium.Marker(
+    location=[city['latitude'], city['longitude']],
+).add_to(world)
+
+world
+Make this Notebook Trusted to load map: File -> Trust Notebook
+world.save('maps_htmls/world_some_cities.html')
+Let's add all cities I've been to to the map
+
+world_all_cities = folium.Map(
+    zoom_start=2,
+    location=[13.133932434766733, 16.103938729508073]
+)
+
+for _, city in cities.iterrows():
+    folium.Marker(
+        location=[city['latitude'], city['longitude']],
+    ).add_to(world_all_cities)
+
+world_all_cities
+Make this Notebook Trusted to load map: File -> Trust Notebook
+world_all_cities.save('maps_htmls/world_all_cities.html')
+Adding information to markers
+Using popup and tooltip
+
+world_all_cities_popup = folium.Map(
+    zoom_start=2,
+    location=[13.133932434766733, 16.103938729508073]
+)
+
+for _, city in cities.iterrows():
+    folium.Marker(
+        location=[city['latitude'], city['longitude']],
+        popup=city['name'],
+    ).add_to(world_all_cities_popup)
+    
+world_all_cities_popup
+Make this Notebook Trusted to load map: File -> Trust Notebook
+world_all_cities_popup.save('maps_htmls/world_all_cities_popup.html')
+world_all_cities_tooltip = folium.Map(
+    zoom_start=2,
+    location=[13.133932434766733, 16.103938729508073]
+)
+
+for _, city in cities.iterrows():
+    folium.Marker(
+        location=[city['latitude'], city['longitude']],
+        popup=city['name'],
+        tooltip=city['name'],
+    ).add_to(world_all_cities_tooltip)
+    
+world_all_cities_tooltip
+Make this Notebook Trusted to load map: File -> Trust Notebook
+world_all_cities_tooltip.save('maps_htmls/world_all_cities_tooltip.html')
+Looking closer into the dataset
+
+cities.head(3)
+name	latitude	longitude	lived	visited
+0	Olinda	-7.998127	-34.908203	yes	yes
+1	Recife	-8.052200	-34.928600	yes	yes
+2	Miami	25.761700	-80.191800	no	yes
+cities.tail(3)
+name	latitude	longitude	lived	visited
+19	Sydney	-33.8688	151.2093	no	no
+20	Orlando	28.5383	-81.3792	no	yes
+21	Brasília	-15.8267	-47.9218	no	yes
+Coloring markers
+Feature engineering: creating a feature for coloring the markers
+
+def select_marker_color(row):
+    if row['lived'] == 'yes':
+        return 'pink'
+    elif row['lived'] == 'no' and row['visited'] == 'yes':
+        return 'purple'
+    return 'blue'
+cities['colors'] = cities.apply(select_marker_color, axis=1)
+cities.head(3)
+name	latitude	longitude	lived	visited	colors
+0	Olinda	-7.998127	-34.908203	yes	yes	pink
+1	Recife	-8.052200	-34.928600	yes	yes	pink
+2	Miami	25.761700	-80.191800	no	yes	purple
+Visualizing colored markers
+
+world_all_cities_colored = folium.Map(
+    zoom_start=2,
+    location=[13.133932434766733, 16.103938729508073]
+)
+
+for _, city in cities.iterrows():
+    folium.Marker(
+        location=[city['latitude'], city['longitude']],
+        popup=city['name'],
+        tooltip=city['name'],
+        icon=folium.Icon(color=city['colors'], prefix='fa', icon='circle')
+    ).add_to(world_all_cities_colored)
+    
+world_all_cities_colored
+Make this Notebook Trusted to load map: File -> Trust Notebook
+world_all_cities_colored.save('maps_htmls/world_all_cities_colored.html')
